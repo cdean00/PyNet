@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8f114e86-d3a4-4aa2-bfe0-664648e15ed5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PyNet.py</StartupFile>
+    <StartupFile>pynetweek4.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="PyNet.py" />
+    <Compile Include="pynetweek4.py" />
+    <Compile Include="pynet_week2.py" />
+    <Compile Include="pynet_week3.py" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

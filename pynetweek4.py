@@ -23,11 +23,34 @@ Note, "Cisco IOS Software...Version 15.0(1)M4...(fc1)" is one line.
 """
 
 #Global variables
-device = {'vendor':'','model':'','os_version':'','uptime':,'','serial_number':''}
+device = {'vendor':'','model':'','os_version':'','uptime':'','serial_number':''}
 
 show_version_output = open('show_version_output.txt', 'r')
 
 for line in show_version_output:
     if "Cisco IOS Software" in line:
-        device['vendor'] = 'Cisco'
-        device['os_version'] = line.
+        #Parsing for vendor
+        sections = line.split(',')
+        words = sections[0].split(' ')
+        device['vendor'] = words[0]
+        
+        #Parsing for os version
+        sections = line.split(',')
+        words = sections[2].split(' ')
+        device['os_version'] = words[2]
+
+    #Parsing for uptime    
+    if "uptime" in line:
+        device['uptime'] = line[(line.find("uptime is"))+10:(line.find('\n'))]
+
+    #Parsing for model
+    if "bytes of memory" in line:
+        words = line.split(' ')
+        device['model'] = words[1]
+
+    #Parsing for serial number
+    if "Processor board ID" in line:
+        words = line.split(' ')
+        device['serial_number']
+            
+print device
