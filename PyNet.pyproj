@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8f114e86-d3a4-4aa2-bfe0-664648e15ed5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>pynetweek4.py</StartupFile>
+    <StartupFile>pynet_week6_exc_2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="pynetweek4.py" />
+    <Compile Include="pynet_week6_exc_2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pynet_week6_exc_1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pynetweek4_excersise2.py" />
+    <Compile Include="pynetweek4_excersise3.py" />
     <Compile Include="pynet_week2.py" />
     <Compile Include="pynet_week3.py" />
   </ItemGroup>
